@@ -18,7 +18,7 @@ def load_model():
     return tf.keras.models.load_model('model.h5')
 
 model = load_model()
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 st.sidebar.markdown("## 🎭 Emotion Detection")
 option = st.sidebar.radio("Select one option:", ["📁 Browse Image", "📸 Live Emotion"])
